@@ -9,6 +9,7 @@ var main = {
             return false;
         });
     },
+
     SliderHomePage: function () {
         $('.slider-banner').owlCarousel({
             loop: true,
@@ -28,9 +29,9 @@ var main = {
 
         $('.slider-doctor').owlCarousel({
             loop: true,
-            margin: 30,
+            margin: 10,
             nav: false,
-            items: 4,
+            items: 3,
             dots: true,
             dotData: true,
             responsive: {
@@ -54,7 +55,7 @@ var main = {
             i++;
         });
         $('.slider-gallery').owlCarousel({
-            loop: true,
+            loop: false,
             margin: 10,
             nav: false,
             items: 3,
@@ -74,18 +75,36 @@ var main = {
 
         $('.slider-partner').owlCarousel({
             loop: true,
-            margin: 8,
+            margin: 16,
             nav: false,
             items: 3,
             dots: true
         });
 
         $('.slider-gioithieu').owlCarousel({
-            loop:false,
+            loop: false,
             margin:10,
-            nav:true,
-            items:8,
-            dots:false,
+            nav: true,
+            items: 8,
+            dots: false,
+            responsive:{
+                0:{
+                    items:4
+                },
+                600:{
+                    items:6
+                },
+                1000:{
+                    items:6
+                }
+            }
+        });
+        $('.slider-cosovatchat').owlCarousel({
+            loop: false,
+            margin:10,
+            nav: true,
+            items: 8,
+            dots: false,
             responsive:{
                 0:{
                     items:4
@@ -99,9 +118,14 @@ var main = {
             }
         });
     },
+
+
     Model: function () {
         $('#model-ads').modal('show');
+
     },
+
+
     ATTR_VIDEO: function () {
         $(".attr_sld").click(function(){
             var self = $(this);
@@ -112,7 +136,10 @@ var main = {
             $(".video-news-thumbs .thumbs-title").html(dataTitle);
 
         });
+
     },
+
+   
     Start: function () {
         this.ScrollToTop();
         this.SliderHomePage();
@@ -124,6 +151,14 @@ $(document).ready(function () {
     main.Start();
 });
 
+const smallDevice = window.matchMedia("(max-width: 576px)");
 
+smallDevice.addListener(handleDeviceChange);
 
+const outputElement = document.querySelector(".modal-content");
 
+function handleDeviceChange(smallDevice) {
+    outputElement.remove();
+    console.log(outputElement);
+
+}
