@@ -155,7 +155,7 @@ const smallDevice = window.matchMedia("(max-width: 576px)");
 
 smallDevice.addListener(handleDeviceChange);
 
-const outputElement = document.querySelector(".modal-content");
+const outputElement = document.getElementById("#model-ads");
 
 function handleDeviceChange(smallDevice) {
     outputElement.remove();

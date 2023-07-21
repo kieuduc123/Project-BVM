@@ -1085,9 +1085,35 @@ a:hover {
   font-family: "ProximaNova-Bold";
   margin-bottom: 8px;
 }
-.short-new {
+.short-news {
   border-left: 2px solid #626263;
 }
 .page-new {
   border-top: 1px solid  #626263;
+}
+
+/* =======dichvu====== */
+
+.service-item {
+  background: #e5e5e5;
+  margin-bottom: 30px;
+  min-height: 330px;
+}
+.service-item .service-item-img {
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  background: #fff;
+  min-height: 263px;
+}
+.service-item .service-item-text {
+  padding: 10px 15px;
+}
+
+.service-other-title {
+  color: #3fa15f;
+}
+
+.list-service-other li {
+  background: url(../images/icons/dotted_list.png) no-repeat 0 5px;
+  padding-left: 20px;
 }
