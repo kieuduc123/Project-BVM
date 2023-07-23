@@ -162,3 +162,7 @@ function handleDeviceChange(smallDevice) {
     console.log(outputElement);
 
 }
+
+
+////navbar
+

@@ -40,12 +40,7 @@
   font-weight: normal;
   font-style: normal;
 }
-/*============================
-  Common Style
- ============================*/
-/*variables*/
-/*mixin*/
-/*common-class*/
+
 .color-primary {
   color: #25a55e;
 }
@@ -204,6 +199,12 @@ a:hover {
 .navbar-main .navbar-nav li.show a {
   border-bottom: 3px solid #3fa15f;
 }
+
+/* .navbar-main .nav-item.active a{
+  border-bottom: 3px solid #3fa15f !important;
+
+} */
+
 .navbar-main .navbar-nav a {
   text-transform: uppercase;
   font-size: 14px;
