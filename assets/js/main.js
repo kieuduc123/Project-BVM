@@ -28,7 +28,7 @@ var main = {
         });
 
         $('.slider-doctor').owlCarousel({
-            loop: true,
+            loop: false,
             margin: 10,
             nav: false,
             items: 3,
@@ -52,7 +52,7 @@ var main = {
         var i = 1;
         $('.slider-doctor .owl-dot span').each(function () {
             $(this).text(i);
-            i++;
+            i++ ;
         });
         $('.slider-gallery').owlCarousel({
             loop: false,
