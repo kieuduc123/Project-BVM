@@ -164,5 +164,3 @@ function handleDeviceChange(smallDevice) {
 }
 
 
-////navbar
-
