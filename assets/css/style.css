@@ -298,6 +298,9 @@ a:hover {
   .page-news img{
     width: 100%;
   }
+  .item-image img{
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
