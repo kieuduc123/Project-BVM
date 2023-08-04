@@ -295,6 +295,9 @@ a:hover {
   .reverse{
     flex-direction: column-reverse;
   }
+  .page-news img{
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
